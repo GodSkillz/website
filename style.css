@@ -1,0 +1,61 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "DynaPuff", cursive;
+}
+
+.main {
+  min-height: 100vh;
+  background-image: url("https://media.giphy.com/media/e6wlM2pxP7A71bPrvO/giphy.gif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.agents {
+  min-height: 100vh;
+  background-image: url("https://media.giphy.com/media/jRtZJvoWxWVJ7uF1cx/giphy.gif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* HAUPTNAVIGATION */
+.nav {
+  font-family: "Rubik", sans-serif;
+  justify-content: flex-end;
+  list-style-type: none; /* Punkte in Auflistung entfernen */
+  padding: 0; /* abstände entfernen */
+  margin: 0; /* abstände entfernen */
+
+  display: flex; /* Nebeneinander darstellen */
+  gap: 10px; /* Abstand zwischen elementen*/
+}
+
+.nav__link {
+  font-family: "Rubik", sans-serif;
+  text-decoration: none; /* unterstreichung entfernen */
+  color: inherit; /* farbe vererben */
+  display: block; /* damit padding greift */
+  white-space: pre; /* damit Wörter nicht umbrechen */
+}
+
+.nav__item {
+  font-family: "Rubik", sans-serif;
+  position: relative; /* für unternavigation */
+}
+
+/* UNTERNAVIGATION */
+.nav--sub {
+  font-family: "Rubik", sans-serif;
+  display: none; /* unternavi verstecken */
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.nav__item:hover .nav--sub {
+  font-family: "Rubik", sans-serif;
+  display: block; /* unternavi wieder anzeigen */
+}
